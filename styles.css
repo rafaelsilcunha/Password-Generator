@@ -63,12 +63,27 @@ hr {
     align-items: center;
     position: relative;
     bottom: 70px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 32px;
+    text-align: center;
 }
 
-.pw-container {
+#pw-container1 {
     width: 211px;
     height: 39px;
     border: 0px;
     border-radius: 6px;
     background-color: #273549;
+    color: #55F991;
+}
+
+#pw-container2 {
+    width: 211px;
+    height: 39px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: #273549;
+    color: #55F991;
 }
