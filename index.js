@@ -11,9 +11,12 @@ let pwlength = 15
 
 function generatePw() {
     for (let i=0; i < pwlength; i++) {
-        let randomChr = Math.floor(Math.random()*characters.length)
-        password1.textContent += characters[randomChr]
-
+        let randomChr1 = Math.floor(Math.random()*characters.length)
+        password1.textContent += characters[randomChr1]
+    }
+     for (let i=0; i < pwlength; i++) {
+        let randomChr2 = Math.floor(Math.random()*characters.length)
+        password2.textContent += characters[randomChr2]
     }
          
 }
