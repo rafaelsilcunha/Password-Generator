@@ -49,6 +49,8 @@ button {
 #generate-btn {
     margin-left: 52px;
     padding: 9px, 17px, 9px, 15px;
+    position: relative;
+    top: 43px;
 }
 
 hr {
@@ -86,4 +88,19 @@ hr {
     border-radius: 6px;
     background-color: #273549;
     color: #55F991;
+}
+
+#checkboxes {
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin-right: 52px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 380px;
+ 
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
 }

@@ -16,8 +16,20 @@
         </div>
         <div id="subtitle">
             <p>Never use an insecure password again.</p>
-        </div>    
-        <button id="generate-btn" onclick="generatePw()">Generate Passwords</button>
+        </div>
+        <div id="center-container">    
+            <button id="generate-btn">Generate Passwords</button>
+            <div id="checkboxes">
+                <div id="checkbox1">
+                    <input class="checkbox" id="sym-check" type="checkbox" name="Symbols">
+                    <label for="Symbols">Symbols</label>
+                </div>
+                <div>
+                    <input class="checkbox" id="num-check" type="checkbox" name="Numbers">
+                    <label for="Numbers">Numbers</label>
+                </div>
+            </div>
+        </div>        
         <hr>
         <div id="generator-boxes">
             <p id="pw-container1"></p>
