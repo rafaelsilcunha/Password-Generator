@@ -18,6 +18,8 @@ let password2 = document.getElementById("pw-container2")
 const symbolsCheck = document.getElementById("sym-check")
 const numbersCheck = document.getElementById("num-check")
 const generateBtn = document.getElementById("generate-btn")
+const copyPassword1 = document.getElementById("copy-pw1")
+const copyPassword2= document.getElementById("copy-pw2")
 
 
 
@@ -75,3 +77,12 @@ generateBtn.addEventListener("click", function(){
         }    
     }
 })
+
+copyPassword1.addEventListener("click", function() {
+    navigator.clipboard.writeText(password1.textContent)
+})
+
+copyPassword2.addEventListener("click", function() {
+    navigator.clipboard.writeText(password2.textContent)
+})
+
