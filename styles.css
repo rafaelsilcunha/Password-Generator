@@ -61,7 +61,7 @@ button {
 #range-label {
     position: relative;
     top: -10px;
-    left: 65px;
+    left: 68px;
 }
 
 #range-selector {
@@ -75,7 +75,7 @@ button {
     margin-left: 52px;
     padding: 9px, 17px, 9px, 15px;
     position: relative;
-    top: 43px;
+    top: 33px;
 }
 
 hr {

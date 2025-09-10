@@ -90,7 +90,7 @@ const passwordLengthValue = document.getElementById("range-label")
 const passwordLengthInput = document.getElementById("pw-size")
 
 passwordLengthValue.textContent = "Password Length: " + passwordLengthInput.value 
-passwordLengthInput.addEventListener("input", (event) => {
+passwordLengthInput.addEventListener("input", function(event) {
     passwordLengthValue.textContent = "Password Length: " + event.target.value
     pwLength = passwordLengthInput.value
 })
