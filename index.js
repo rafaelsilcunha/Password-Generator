@@ -23,7 +23,7 @@ const copyPassword2= document.getElementById("copy-pw2")
 
 
 
-let pwlength = 15
+let pwLength = 15
 
 //Event listener to check if which checkboxes are checked and then runs a function
 generateBtn.addEventListener("click", function(){
@@ -34,44 +34,44 @@ generateBtn.addEventListener("click", function(){
     if (includeSymbols && includeNumbers) {
         password1.textContent = ""
         password2.textContent = ""
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr1 = Math.floor(Math.random()*characters.length)
             password1.textContent += characters[randomChr1]
         }
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr2 = Math.floor(Math.random()*characters.length)
             password2.textContent += characters[randomChr2]
         }    
     } else if (includeNumbers) {
         password1.textContent = ""
         password2.textContent = ""
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr1 = Math.floor(Math.random()*lettersNumbers.length)
             password1.textContent += lettersNumbers[randomChr1]
         }
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr2 = Math.floor(Math.random()*lettersNumbers.length)
             password2.textContent += lettersNumbers[randomChr2]
         }    
     } else if (includeSymbols) {
         password1.textContent = ""
         password2.textContent = ""
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr1 = Math.floor(Math.random()*lettersSymbols.length)
             password1.textContent += lettersSymbols[randomChr1]
         }
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr2 = Math.floor(Math.random()*lettersSymbols.length)
             password2.textContent += lettersSymbols[randomChr2]
         }    
     } else {
         password1.textContent = ""
         password2.textContent = ""
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr1 = Math.floor(Math.random()*characters.length)
             password1.textContent += characters[randomChr1]
         }
-        for (let i=0; i < pwlength; i++) {
+        for (let i=0; i < pwLength; i++) {
             let randomChr2 = Math.floor(Math.random()*characters.length)
             password2.textContent += characters[randomChr2]
         }    
@@ -84,5 +84,14 @@ copyPassword1.addEventListener("click", function() {
 
 copyPassword2.addEventListener("click", function() {
     navigator.clipboard.writeText(password2.textContent)
+})
+
+const passwordLengthValue = document.getElementById("range-label")
+const passwordLengthInput = document.getElementById("pw-size")
+
+passwordLengthValue.textContent = "Password Length: " + passwordLengthInput.value 
+passwordLengthInput.addEventListener("input", (event) => {
+    passwordLengthValue.textContent = "Password Length: " + event.target.value
+    pwLength = passwordLengthInput.value
 })
 

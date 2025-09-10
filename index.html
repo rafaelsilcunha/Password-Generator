@@ -17,8 +17,14 @@
         <div id="subtitle">
             <p>Never use an insecure password again.</p>
         </div>
-        <div id="center-container">    
-            <button id="generate-btn">Generate Passwords</button>
+        <div id="center-container"> 
+            <div id="range-generate-section">
+                <div id="range-selector">
+                    <input type="range" id="pw-size" min="6" max="20" step="1" list="pw-length">
+                    <label id="range-label" for="pw-size">Password Length: </label>
+                </div>
+                <button id="generate-btn">Generate Passwords</button>
+            </div>
             <div id="checkboxes">
                 <div id="checkbox1">
                     <input class="checkbox" id="sym-check" type="checkbox" name="Symbols">

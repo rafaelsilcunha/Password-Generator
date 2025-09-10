@@ -46,6 +46,31 @@ button {
     font-weight: 500;
 }
 
+#range-generate-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#pw-size {
+    width: 191px;
+    margin-left: 52px;
+    position: relative;
+    top: 40px;
+}
+
+#range-label {
+    position: relative;
+    top: -10px;
+    left: 65px;
+}
+
+#range-selector {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
 #generate-btn {
     margin-left: 52px;
     padding: 9px, 17px, 9px, 15px;
